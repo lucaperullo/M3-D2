@@ -13,10 +13,10 @@ const displayResults = async (data) => {
   console.log(data);
   let mainContent = document.querySelector(".splide__list");
   data.forEach((data) => {
-    mainContent.innerHTML += `<li class="splide__slide"><img
+    mainContent.innerHTML += `<li class="splide__slide"><div class="container"><img
       class="carousel-img"
       src="${data.album.cover_xl}" height=250
-      alt=""/><audio controls> <source src="${data.preview}"</audio></li> </li>`;
+      alt=""/><audio controls> <source src="${data.preview}"</audio></div></li> </li>`;
   });
   await new Splide("#splide", {
     perPage: 5,
@@ -25,7 +25,10 @@ const displayResults = async (data) => {
         perPage: 3,
       },
       1000: {
-        perPage: 3,
+        perPage: 2,
+      },
+      577: {
+        perPage: 1,
       },
     },
   }).mount();
@@ -46,10 +49,10 @@ const displayResults2 = async (data) => {
   console.log(data);
   let mainContent = document.querySelector("#splide-list-2");
   data.forEach((data) => {
-    mainContent.innerHTML += `<li class="splide__slide"><img
+    mainContent.innerHTML += `<li class="splide__slide"><div class="container"><img
       class="carousel-img"
       src="${data.album.cover_xl}" height=250
-      alt=""/><audio controls> <source src="${data.preview}"</audio></li> </li>`;
+      alt=""/><audio controls> <source src="${data.preview}"</audio></div></li> </li>`;
   });
   await new Splide("#splide2", {
     perPage: 5,
@@ -58,7 +61,10 @@ const displayResults2 = async (data) => {
         perPage: 3,
       },
       1000: {
-        perPage: 3,
+        perPage: 2,
+      },
+      577: {
+        perPage: 1,
       },
     },
   }).mount();
@@ -79,10 +85,10 @@ const displayResults3 = async (data) => {
   console.log(data);
   let mainContent = document.querySelector("#splide-list-3");
   data.forEach((data) => {
-    mainContent.innerHTML += `<li class="splide__slide"><img
+    mainContent.innerHTML += `<li class="splide__slide"><div class="container"><img
       class="carousel-img"
       src="${data.album.cover_xl}" height=250
-      alt=""/><audio controls> <source src="${data.preview}"</audio></li> </li>`;
+      alt=""/><audio controls> <source src="${data.preview}"</audio></div></li> </li>`;
   });
   await new Splide("#splide3", {
     perPage: 5,
@@ -91,7 +97,10 @@ const displayResults3 = async (data) => {
         perPage: 3,
       },
       1000: {
-        perPage: 3,
+        perPage: 2,
+      },
+      577: {
+        perPage: 1,
       },
     },
   }).mount();
@@ -112,10 +121,10 @@ const displayResults4 = async (data) => {
   console.log(data);
   let mainContent = document.querySelector("#splide-list-4");
   data.forEach((data) => {
-    mainContent.innerHTML += `<li class="splide__slide"><img
+    mainContent.innerHTML += `<li class="splide__slide"><div class="container"><img
       class="carousel-img"
       src="${data.album.cover_xl}" height=250
-      alt=""/><audio controls> <source src="${data.preview}"</audio></li> </li>`;
+      alt=""/><audio controls> <source src="${data.preview}"</audio></div></li> </li>`;
   });
   await new Splide("#splide4", {
     perPage: 5,
@@ -124,7 +133,10 @@ const displayResults4 = async (data) => {
         perPage: 3,
       },
       1000: {
-        perPage: 3,
+        perPage: 2,
+      },
+      577: {
+        perPage: 1,
       },
     },
   }).mount();
@@ -145,10 +157,10 @@ const displayResults5 = async (data) => {
   console.log(data);
   let mainContent = document.querySelector("#splide-list-5");
   data.forEach((data) => {
-    mainContent.innerHTML += `<li class="splide__slide"><img
+    mainContent.innerHTML += `<li class="splide__slide"><div class="container"><img
       class="carousel-img"
       src="${data.album.cover_xl}" height=250
-      alt=""/><audio controls> <source src="${data.preview}"</audio></li> </li>`;
+      alt=""/><audio controls> <source src="${data.preview}"</audio></div></li> </li>`;
   });
   await new Splide("#splide5", {
     perPage: 5,
@@ -157,7 +169,10 @@ const displayResults5 = async (data) => {
         perPage: 3,
       },
       1000: {
-        perPage: 3,
+        perPage: 2,
+      },
+      577: {
+        perPage: 1,
       },
     },
   }).mount();
@@ -178,10 +193,10 @@ const displayResults6 = async (data) => {
   console.log(data);
   let mainContent = document.querySelector("#splide-list-6");
   data.forEach((data) => {
-    mainContent.innerHTML += `<li class="splide__slide"><img
+    mainContent.innerHTML += `<li class="splide__slide"><div class="container"><img
       class="carousel-img"
       src="${data.album.cover_xl}" height=250
-      alt=""/><audio controls> <source src="${data.preview}"</audio></li> </li>`;
+      alt=""/><audio controls> <source src="${data.preview}"</audio></div></li> </li>`;
   });
   await new Splide("#splide6", {
     perPage: 5,
@@ -190,7 +205,10 @@ const displayResults6 = async (data) => {
         perPage: 3,
       },
       1000: {
-        perPage: 3,
+        perPage: 2,
+      },
+      577: {
+        perPage: 1,
       },
     },
   }).mount();
